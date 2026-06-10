@@ -38,7 +38,7 @@
         "trigger": {
           "ui_trigger": {
             "show_button": true,
-            "title": "Image",
+            "title": "SINGLE PHOTO",
             "icon": "photo_camera",
             "use_custom_color": false,
             "custom_color": "#196cb0"
@@ -128,7 +128,7 @@
         "trigger": {
           "ui_trigger": {
             "show_button": true,
-            "title": "Collage",
+            "title": "PHOTO STRIP",
             "icon": "auto_awesome_mosaic",
             "use_custom_color": false,
             "custom_color": "#196cb0"
@@ -445,16 +445,10 @@
         "description": "virtual camera",
         "backend_config": {
           "orientation": "1: 0°",
-          "backend_type": "Gphoto2",
-          "gcapture_target": "",
-          "disable_viewfinder_before_capture": true,
-          "iso_liveview": "",
-          "iso_capture": "",
-          "shutter_speed_liveview": "",
-          "shutter_speed_capture": "",
-          "canon_eosmoviemode": false,
-          "pause_camera_on_livestream_inactive": false,
-          "timeout_until_inactive": 30
+          "backend_type": "VirtualCamera",
+          "framerate": 15,
+          "emulate_hires_static_still": false,
+          "emulate_multicam_capture_devices": 4
         }
       }
     ]
